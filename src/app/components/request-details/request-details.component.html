@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card mt-5">
+                <img src="request-image.jpg" class="card-img-top" alt="Request Image">
+                <div class="card-body">
+                    <h5 class="card-title">Request Details</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span class="font-weight-bold text-dark">Request ID:</span>
+                            <span>{{ request.request.id }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span class="font-weight-bold text-dark">Request Type:</span>
+                            <span>{{ request.request.type }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span class="font-weight-bold text-dark">Request Description:</span>
+                            <span>{{ request.request.description }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span class="font-weight-bold text-dark">Request Status:</span>
+                            <span>{{ request.request.status }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span class="font-weight-bold text-dark">Request User ID:</span>
+                            <span>{{ request.request.userId }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span class="font-weight-bold text-dark">Request Contract ID:</span>
+                            <span>{{ request.request.contractId }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span class="font-weight-bold text-dark">Request Created At:</span>
+                            <span>{{ formatDate(request.createdAt) }}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span class="font-weight-bold text-dark">Request Updated At:</span>
+                            <span>{{ formatDate(request.updatedAt) }}</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary mt-3">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+.navbar {
+    background-color: white;
+}
+
+.bg-darkblue {
+    background-color: #010158;
+    /* Replace with your desired dark blue color code */
+}
+
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: blue;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: lightblue;
+}
+
+.dropdown-menu {
+    background-color: white;
+}
+
+.dropdown-item {
+    color: blue;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: darkblue;
+    background-color: #f8f9fa;
+    /* Add a light gray background on hover/focus */
+}
+
+.account-image {
+    border: 2px solid blue;
+    width: 35px;
+    height: 35px;
+}
+
+
+.logo-image {
+    width: auto;
+    height: 50px;
+    margin-left: 10px;
+}
