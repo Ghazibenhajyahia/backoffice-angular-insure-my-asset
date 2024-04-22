@@ -1,9 +1,10 @@
 .container {
     background-color: #ffffff;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
 
 h1 {
     font-size: 24px;
@@ -44,6 +45,14 @@ tbody tr:nth-child(even) {
     text-align: center;
 }
 
+.btn {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
 .form-group label {
     font-weight: bold;
 }
@@ -53,12 +62,68 @@ tbody tr:nth-child(even) {
     border-color: #cccccc;
 }
 
-.btn-primary,
+.btn-primary {
+    background-color: #000000;
+    color: #fdfdfd;
+
+}
+
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .btn-danger,
 .form-control {
-    color: #fdfdfd;
+    color: #000000;
 }
 
 .row:not(:last-child) {
     margin-bottom: 20px;
+    height: 35px;
+}
+
+
+/* Add User Modal */
+#addUserModal {
+    background-color: #fff;
+}
+
+#addUserModal .modal-header {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+#addUserModal .modal-title {
+    color: #000;
+}
+
+#addUserModal .modal-body {
+    padding: 20px;
+}
+
+#addUserModal .form-group label {
+    color: #000;
+}
+
+#addUserModal .form-control {
+    background-color: #fff;
+    color: #000;
+    /* Update text color to black */
+    border-color: #ccc;
+}
+
+#addUserModal .btn-primary {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+#addUserModal .btn-primary:hover,
+#addUserModal .btn-primary:focus {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
 }

@@ -1,2 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
+/* Import Bootstrap styles */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+/* Global styles */
+
+/* Override Bootstrap styles or add custom styles here */
+
+/* Responsive styles */
+
+/* Media queries for responsive styling */
+@media (max-width: 576px) {
+    /* Styles for small screens (e.g., mobile devices) */
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Styles for medium screens (e.g., tablets) */
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Styles for large screens (e.g., laptops) */
+}
+
+@media (min-width: 993px) {
+    /* Styles for extra-large screens (e.g., desktops) */
+}

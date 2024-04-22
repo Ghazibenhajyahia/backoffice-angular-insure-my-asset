@@ -67,6 +67,40 @@ export class RequestDetailsComponent implements OnInit {
     }
   }
 
+  async approveRequest() {
+    try {
+      const paramMap = this.activatedRoute.snapshot.paramMap;
+      const requestId = paramMap?.get('id');
+
+      if (requestId) {
+        const request = await this.requestService.approveRequest(+requestId).toPromise();
+        this.request = request;
+
+      } else {
+        console.log('Request ID is not available.');
+      }
+    } catch (error) {
+      console.log('Error:', error);
+    }
+  }
+
+  async rejectRequest() {
+    try {
+      const paramMap = this.activatedRoute.snapshot.paramMap;
+      const requestId = paramMap?.get('id');
+
+      if (requestId) {
+        const request = await this.requestService.rejectRequest(+requestId).toPromise();
+        this.request = request;
+
+      } else {
+        console.log('Request ID is not available.');
+      }
+    } catch (error) {
+      console.log('Error:', error);
+    }
+  }
+
 
 
 

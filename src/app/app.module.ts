@@ -1,27 +1,34 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http'; // Add this
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { DashboardModule } from './components/dashboard/dashboard.module';
+import { HttpClientModule } from '@angular/common/http';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+export function playerFactory() {
+  return player;
+}
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
+    NavigationComponent,
     FooterComponent,
-    NavigationComponent
+    LoginComponent,
   ],
   imports: [
-    FormsModule, // Add this
-    HttpClientModule, // Add this
+    LottieModule.forRoot({ player: playerFactory }),
     BrowserModule,
     AppRoutingModule,
-    DashboardModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

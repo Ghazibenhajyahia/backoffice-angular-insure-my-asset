@@ -8,12 +8,13 @@ import { AppComponent } from 'src/app/app.component';
 import { RequestsComponent } from '../requests/requests.component';
 import { UsersComponent } from '../users/users.component';
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { RequestDetailsComponent } from '../request-details/request-details.component';
 
 @NgModule({
     declarations: [
         RequestsComponent,
         UsersComponent,
-        // RequestDetailsComponent,
+        RequestDetailsComponent,
         DashboardComponent,
         SidebarComponent,
     ],

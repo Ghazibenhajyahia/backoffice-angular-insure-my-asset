@@ -38,7 +38,31 @@
     font-weight: bold;
 }
 
+.decline {
+
+    background-color: #d36464;
+}
+
+.approve {
+    background-color: #6192a2;
+}
+
 .btn-primary {
     display: block;
     width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary:first-child {
+    margin-right: 10px;
+}
+
+.btn-approve {
+
+    color: #fff;
+}
+
+.btn-decline {
+
+    color: #fff;
 }

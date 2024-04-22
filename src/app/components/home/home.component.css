@@ -1,54 +1,51 @@
-/* .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    text-align: center;
+.container {
+    padding-top: 20px;
 }
 
-h1 {
-    margin-bottom: 20px;
-} */
-
-
-.container {
+.dashboard-home {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
-h1 {
+.dashboard-home h2 {
     font-size: 24px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-p {
+.dashboard-home p {
     font-size: 16px;
-    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #555555;
 }
 
-.card {
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.card-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.card-header h3 {
+    margin: 0;
+    padding: 10px;
 }
 
 .card-body {
     padding: 20px;
 }
 
-.card-title {
-    font-size: 20px;
-    margin-bottom: 10px;
+.list-group-item {
+    background-color: #f8f8f8;
+    border: none;
 }
 
-.card-text {
-    font-size: 16px;
-    margin-bottom: 20px;
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
-.btn-primary {
-    background-color: #000000;
-    border-color: #000000;
-    color: #ffffff;
-}
-
-.row:not(:last-child) {
-    margin-bottom: 20px;
+.list-group-item:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }

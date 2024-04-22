@@ -3,13 +3,13 @@
 }
 
 .bg-darkblue {
-    background-color: #010158;
+    background-color: black;
     /* Replace with your desired dark blue color code */
 }
 
 
 .navbar-dark .navbar-toggler-icon {
-    background-color: blue;
+    background-color: rgb(246, 246, 246);
 }
 
 .nav-link {
@@ -26,12 +26,12 @@
 }
 
 .dropdown-item {
-    color: blue;
+    color: rgb(228, 228, 230);
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    color: darkblue;
+    color: rgb(255, 255, 255);
     background-color: #f8f9fa;
     /* Add a light gray background on hover/focus */
 }
@@ -45,6 +45,19 @@
 
 .logo-image {
     width: auto;
+    height: 100px;
+    margin-left: 80px;
+}
+
+.account {
+    width: auto;
     height: 50px;
-    margin-left: 10px;
+}
+
+.caligraphie {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    height: 150px;
+    color: white;
+    margin-left: 350px;
 }

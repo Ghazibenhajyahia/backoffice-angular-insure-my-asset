@@ -25,5 +25,11 @@ export class RequestService {
     deleteRequest(id: number): Observable<any> {
         return this.http.delete<any>(`${this.baseUrl}/${id}`);
     }
+    approveRequest(id: number): Observable<any> {
+        return this.http.patch<any>(`${this.baseUrl}/${id}/approve`, {});
+    }
+    rejectRequest(id: number): Observable<any> {
+        return this.http.patch<any>(`${this.baseUrl}/${id}/reject`, {});
+    }
 
 }

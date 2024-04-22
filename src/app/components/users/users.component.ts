@@ -11,6 +11,8 @@ import { NgForm } from '@angular/forms';
 })
 export class UsersComponent {
 
+
+
   users: any[] = [];
   user: any = {
     id: 0,
@@ -36,6 +38,23 @@ export class UsersComponent {
     role: '',
   };
 
+  openModal() {
+    const modal = document.getElementById('myModal');
+    console.log(modal);
+
+    if (modal != null) {
+      modal.style.display = 'block';
+      modal.style.opacity = '1';
+    }
+  }
+
+  closeModal() {
+    const modal = document.getElementById('myModal');
+    if (modal != null) {
+      modal.style.display = 'none';
+      modal.style.opacity = '0';
+    }
+  }
 
   constructor(private userService: UserService, private router: Router) { }
 
@@ -111,6 +130,7 @@ export class UsersComponent {
         this.cancel();
       }
     });
+    this.closeModal();
   }
   submitForm(form: NgForm) {
     console.log(form.value);

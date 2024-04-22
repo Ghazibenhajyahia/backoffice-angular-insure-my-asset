@@ -5,6 +5,7 @@ import { RequestDetailsComponent } from '../request-details/request-details.comp
 import { AuthGuard } from 'src/app/utils/auth.guard';
 import { RequestsComponent } from '../requests/requests.component';
 import { UsersComponent } from '../users/users.component';
+import { HomeComponent } from '../home/home.component';
 
 const routes: Routes = [
 
@@ -12,7 +13,8 @@ const routes: Routes = [
         path: '', component: DashboardComponent, canActivate: [AuthGuard], children: [
             { path: 'requests', component: RequestsComponent },
             { path: 'users', component: UsersComponent },
-            // { path: 'request-details/:id', component: RequestDetailsComponent },
+            { path: 'request-details/:id', component: RequestDetailsComponent },
+            { path: 'dashboard-home', component: HomeComponent },
             // { path: 'request-details/:id/edit', component: RequestDetailsComponent },
             // { path: 'users/:id', component: UsersComponent },
             // { path: 'users/:id/edit', component: UsersComponent },
